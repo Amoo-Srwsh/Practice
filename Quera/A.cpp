@@ -6,7 +6,7 @@ using namespace std;
 #define endl '\n'
 string s;
 int i;
-void decode(char c)
+void decode(char c) // convert ascii number to intiger function
 {
 	int ans=0;
 	stringstream str;
