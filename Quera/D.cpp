@@ -1,4 +1,5 @@
 // in the name of Allah
+// https://quera.org/problemset/6374/
 #include <bits/stdc++.h>
 using namespace std;
 #define endl '\n'
