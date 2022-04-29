@@ -9,13 +9,6 @@ using namespace std;
 #define mp       make_pair
 #define all(x)   x.begin(), x.end()
 #define cl       clear
-inline bool check(string s, int len)
-{
-	for (int i=0; i<len-1; i++) 
-		if (s[i]<s[i+1])
-			return false;
-	return true;
-}
 int32_t main()
 {	
 	sync; 
@@ -24,7 +17,7 @@ int32_t main()
 	while (n--) {
 		string s, t1, t2=""; cin >> s, t1=s;
 		int len=s.length();
-		if (len==1||check(s, len)) {
+		if (is_sorted(s)) {
 			cout << "no answer" << endl;
 			continue; 
 		}
