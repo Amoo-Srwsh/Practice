@@ -33,7 +33,7 @@ int sol()
 		if (!v[i]) b=0;
 		else b++;
 	}
-	if (n-(a+b)<=0) kill(0);
+	if (a+b>=n) kill(0);
 	kill(n-(a+b)+1);
 }
 int main()
