@@ -28,4 +28,27 @@ int32_t main()
 		for (int i=0; i<n; i++) cout << p[i] << " ";
 		cout << endl;
 	}
+	//---second solution---//
+	/*
+	int tt;
+  	cin >> tt;
+  	while (tt--) {
+    		int n;
+    		cin >> n;
+    		vector<int> p(n);
+    		for (int i = 0; i < n; i++) {
+      			cin >> p[i];
+    		}
+    		int j = 0;
+    		while (j < n && p[j] == j + 1) {
+      			++j;
+    		}
+    		if (j < n) {
+      			reverse(p.begin() + j, min_element(p.begin() + j, p.end()) + 1);
+    		}
+    		for (int i = 0; i < n; i++) {
+      			cout << p[i] << " \n"[i == n - 1];
+    		}
+	}
+	*/
 }
