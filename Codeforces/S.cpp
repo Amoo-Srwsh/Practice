@@ -25,4 +25,19 @@ int main() {
 	}
 	cout << ans << endl;
    }
+	
+   /* second solution
+   int TC; cin >> TC;
+   while (TC--) {
+        int n, ans = 0; cin >> n;
+	map <int, int> cnt;
+	for (int i = 0; i < n; i++) {
+	     int a; cin >> a, a = abs(a);
+	     int lim = ((a == 0)?2:1);
+	     if (cnt[a] == 2) continue;
+	     cnt[a] += lim;
+	     ans += 1;
+	}
+    } 
+    */ 
 }
