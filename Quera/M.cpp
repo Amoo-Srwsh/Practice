@@ -9,7 +9,7 @@ using namespace std;
 #pragma GCC optimize("O1")
 #define ll long long
 int main() {
-    /*Display Pascal Tringle*/
+    /*Display Pascal Tringle (logic:Brute Force)*/
     sync;
     int n, Tx, Ty; cin >> n; 
     if (n == 1) cout << "1";
