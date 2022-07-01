@@ -26,6 +26,7 @@ void make_map(vector<string>S, string res, int ur, int uc) {
 }
 int main() {
     sync;
+    /* Find the best different ways to reach the point * from ^ */
     int R, ur, uc, tr, tc; cin >> n >> m >> R;
     vector<string> S(n);
     for (int i = 0; i < n; i++) cin >> S[i];
