@@ -22,7 +22,7 @@ int main() {
     sort(odd.begin(), odd.end(), greater<int>());
     int cx = even.size(), cy = odd.size();
     int EorO = (cx > cy);
-    int i = 0, j = 0, cnt = min(cx, cy)*2 + (cx != cy);  // tomorow make loop counter with out cnt varible
+    int i = 0, j = 0, cnt = min(cx, cy)*2 + (cx != cy);
     while (cnt--) {
 	  if (EorO) s -= even[i++];
 	  else s -= odd[j++];
