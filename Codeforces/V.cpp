@@ -20,13 +20,10 @@ int main() {
     }
     sort(even.begin(), even.end(), greater<int>());
     sort(odd.begin(), odd.end(), greater<int>());
-    int cx = even.size(), cy = odd.size();
-    int EorO = (cx > cy);
-    int i = 0, j = 0, cnt = min(cx, cy)*2 + (cx != cy);
-    while (cnt--) {
-	  if (EorO) s -= even[i++];
-	  else s -= odd[j++];
-	  EorO = !EorO;
-    }
+    int MIN = min(even.size(), odd.size());
+    s -= accumulate(even.begin(), even.begin() + MIN, 0);
+    s -= accumulate(odd.begin(), odd.begin() + MIN, 0);
+    if (MIN < even.size()) s -= even[MIN];
+    if (MIN < odd.size()) s -= odd[MIN];
     cout << s;
 }
