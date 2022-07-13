@@ -11,7 +11,7 @@ using namespace std;
 #define ll long long
 int A[5][5];
 void sol () {
-    // This can be done with a larger table :)
+    // This logic can be done for large tables :)
     for (int i = 1; i < 4; i++)
          for (int j = 1; j < 4; j++)
               cin >> A[i][j];
