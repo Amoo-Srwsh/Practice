@@ -26,8 +26,8 @@ int main() {
   for (int i = 0; i < n*m; i += n) {
        int t = 0, f = 0;
        for (int j = i, c = 0; s[c] != '\0'; j++, c++) {
+	    if (count[j] > 1) { f++; continue; }
 	    for (int k = 0; k < 4; k++) {
-		 if (count[j] > 1) { f++; break; }
 		 if (S[j][k] == '#') {
 	             if (k == (int)s[c] - 65) { t++; }
 		     else { f++; }
