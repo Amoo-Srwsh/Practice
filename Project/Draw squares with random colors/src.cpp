@@ -17,7 +17,7 @@ int main (int argc, char *argv[]) {
     image.open(argv[1]);
     image << "P3\n500 500\n255\n";
     vector<int> A;
-    int cnx = 1, cny = 1, c = 0, t = 0;
+    int cnx = 1, cny = 1, c = 0;
     for (int i = 1; i <= 500; i++, cnx++) {
 	 for (int j = 1; j <= 500; j++, cny++) {
               if (cnx == 1 && cny == 1) {
@@ -29,8 +29,11 @@ int main (int argc, char *argv[]) {
 	      else { image << A[c] << " " << A[c + 1] << " " << A[c + 2] << endl; }
 	      if (cny == n) cny = 0, c += 3;
 	 }
-	 if (cnx == n) cnx = 0, t = c - 3;
-	 c = t;
+	 if (cnx == n) {
+             cnx = 0;
+	     A.clear();
+	 }
+	 c = 0;
     }
     image.close();
 }
