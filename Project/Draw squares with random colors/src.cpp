@@ -25,7 +25,7 @@ int main (int argc, char *argv[]) {
 		  A.push_back(rand()%255); 
 		  A.push_back(rand()%255); 
 	      }
-	      if (cnx == n || cny == n) { image << "255 255 255\n"; } 
+	      if ((cnx == n || cny == n) && (i != 500 && j != 500)) { image << "255 255 255\n"; } 
 	      else { image << A[c] << " " << A[c + 1] << " " << A[c + 2] << endl; }
 	      if (cny == n) cny = 0, c += 3;
 	 }
