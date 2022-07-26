@@ -1,4 +1,4 @@
-// in the name if Allah
+// in the name of Allah
 #include<bits/stdc++.h>
 using namespace std;
 #define kill(x) return cout<<x<<'\n', 0;
