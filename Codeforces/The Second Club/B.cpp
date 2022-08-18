@@ -17,6 +17,8 @@ using namespace std;
 typedef long long ll;
 typedef long double ld;
 
+inline int absolute_zero (int a, int b) { return (a - b <= 0) ? 0 : a - b; }
+
 int main(int argc, char *argv[]) {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
@@ -33,7 +35,7 @@ int main(int argc, char *argv[]) {
 	 }
 	 int mxn = -1, mnn = -1, ans = -1;
 	 for (int i = 0; i < n; i++) {
-              int xt = ((A[i] - x <= 0) ? 0 : A[i] - x);
+              int xt = absolute_zero(A[i], x);
 	      int yt = A[i] + x;
 	      if (xt > mxn || yt < mnn) {
 		  ans++;
