@@ -42,7 +42,7 @@ int main(int argc, char *argv[]) {
 		   P.push_back(j); 
 	      }
 	      if ((y - x) % 2 == 0) {
-		  swap(P[x + ((y - x) / 2) - 1], P[x + ((y - x) / 2) - 2]);
+		  swap(P[x + ((y - x) / 2) - 1], P[x - 1]);
 	      }
 	      x = ++y;
 	 } 
