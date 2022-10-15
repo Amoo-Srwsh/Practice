@@ -1,5 +1,8 @@
 /* IN THE NAME OF ALLAH */
 
+/* problem url */
+// https://codeforces.com/contest/1730/problem/A
+
 #include <bits/stdc++.h>
 
 using namespace std;
